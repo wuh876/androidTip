@@ -1,0 +1,6 @@
+1、back键退出APP不销毁activity
+重写onkeydown()
+ if(keyCode == KeyEvent.KEYCODE_BACK){
+    moveTaskToBack(true);
+    return true;
+ }
