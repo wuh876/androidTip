@@ -9,3 +9,9 @@ app 闪退 fragment重叠bug解决方法：
 当前APP崩溃后首页重启或者从后台再次回到这个app的时候，通过onCreate中的参数savedInstanceState恢复了之前的fragment。
 此时的FragmentTransaction中的相当于又再次add了fragment进去的，之前保存的fragment也还在。
 hide()和show()方法对之前保存的fragment已经失效了。所以出现了重叠的现象。
+
+
+Tablayout+ViewPager+Fragment中Fragment重复加载问题：
+解决方法:
+(1) FramgmentPagerAdapter 中重写父类的destroyItem 方法.
+(2) 在destroyItem方法中,删除 super()的父类实现方法.
