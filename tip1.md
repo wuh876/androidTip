@@ -35,7 +35,7 @@ getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STAB
                 
                 
                 
-#glide 3.x 升级到4.x问题
+# glide 3.x 升级到4.x问题
 ```
 @GlideModule
 public class MyAppGlideModule extends AppGlideModule {
