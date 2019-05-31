@@ -32,3 +32,21 @@
 然后在activity的oncreate（）中设置flag，要同时使用
 getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+                
+                
+                
+#glide 3.x 升级到4.x问题
+```
+@GlideModule
+public class MyAppGlideModule extends AppGlideModule {
+
+    @Override
+    public void registerComponents(@NonNull Context context, @NonNull Glide glide, @NonNull Registry registry) {
+        super.registerComponents(context, glide, registry);
+    }
+
+    @Override
+    public boolean isManifestParsingEnabled() {
+        return false;
+    }
+```
