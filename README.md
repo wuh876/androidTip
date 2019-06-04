@@ -29,7 +29,8 @@ public int  getResource(String imageName){
 }
 ```
 
-三、判断是debug 还是release
+
+# 判断是debug 还是release
 
 ```
 public static boolean isApkInDebug(Context context) {
