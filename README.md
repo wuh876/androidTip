@@ -1,8 +1,6 @@
-# androidTip
-android知识点
+# android知识点
 
-
-根据图片的名字获取对应的资源ID
+# 根据图片的名字获取对应的资源ID
 
 一、   getResources().getIdentifier(String name,String defType,String defPackage) 
 ```
@@ -28,7 +26,6 @@ public int  getResource(String imageName){
         return r_id;
 }
 ```
-
 
 # 判断是debug 还是release
 
