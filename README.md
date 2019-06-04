@@ -28,3 +28,16 @@ public int  getResource(String imageName){
         return r_id;
 }
 ```
+
+三、判断是debug 还是release
+
+```
+public static boolean isApkInDebug(Context context) {
+   try {
+       ApplicationInfo info = context.getApplicationInfo();
+       return (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
+   } catch (Exception e) {
+       return false;
+   }
+}
+```
