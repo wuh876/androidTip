@@ -39,3 +39,30 @@ public static boolean isApkInDebug(Context context) {
    }
 }
 ```
+
+# 禁止屏幕锁屏
+
+## 方法一：
+```
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); setContentView(R.layout.main);  
+```
+## 方法二
+```
+@Override  
+    protected void onResume() {  
+        super.onResume();  
+        pManager = ((PowerManager) getSystemService(POWER_SERVICE));  
+        mWakeLock = pManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK  
+                | PowerManager.ON_AFTER_RELEASE, TAG);  
+        mWakeLock.acquire();  
+    }  
+      
+    @Override  
+    protected void onPause() {  
+        super.onPause();  
+          
+        if(null != mWakeLock){  
+            mWakeLock.release();  
+        }  
+    }  
+```
