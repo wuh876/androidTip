@@ -44,7 +44,8 @@ public static boolean isApkInDebug(Context context) {
 
 ## 方法一：
 ```
-getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); setContentView(R.layout.main);  
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+setContentView(R.layout.main);  
 ```
 ## 方法二
 ```
