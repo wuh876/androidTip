@@ -28,16 +28,7 @@ checkout远程的Release分支，在本地起名为myRelease分支，并切换�
   git checkout master
   git merge cloud
 ```
-## 5、合并分支
-
-合并前要先切回要并入的分支
-```
-把cloud分支合并入master分支
-  git checkout master
-  git merge cloud
-```
 ## 6、撤消上一次commit的内容(该操作会彻底回退到某个版本，本地的源码也会变为上一个版本的内容)
-
 ```
   git log
   git reset --hard <commit-id>
