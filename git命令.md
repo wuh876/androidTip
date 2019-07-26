@@ -41,3 +41,10 @@ checkout远程的Release分支，在本地起名为myRelease分支，并切换�
   '
   git commit --amend 可以查看到刚刚commit的log信息
 ```
+## 8、clone其他分支到本地指定目录
+```
+-b 分支名
+
+ git clone -b master git@gitee.com:mywebadd/changmei-android-2.0.git /f/AndroidProjects/Changmei
+ ```
+
