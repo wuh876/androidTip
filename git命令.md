@@ -48,3 +48,14 @@ checkout远程的Release分支，在本地起名为myRelease分支，并切换�
  git clone -b master git@gitee.com:mywebadd/changmei-android-2.0.git /f/AndroidProjects/Changmei
  ```
 
+
+# 一、一份代码创建2个仓库
+## 1、 git remote -v    //查看当前git的远程仓库的名字和地址，默认name是origin  
+## 2、git  remote  add  <名字>  <地址> 
+## 3、
+```
+git add.
+git commit -m 'message'
+```
+## 4、git  push  <名字> <分支名>
+
