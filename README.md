@@ -66,3 +66,14 @@ protected void onPause() {
      }  
 }  
 ```
+
+
+# Android项目打包遇com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error
+
+```
+在app的build.gradle中添加以下配置：
+
+aaptOptions.cruncherEnabled = false  
+aaptOptions.useNewCruncher = false 
+
+```
