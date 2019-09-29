@@ -54,7 +54,7 @@ checkout远程的Release分支，在本地起名为myRelease分支，并切换�
 ## 2、git  remote  add  <名字>  <地址> 
 ## 3、
 ```
-git add.
+git add.    //注意：这里有个点.
 git commit -m 'message'
 ```
 ## 4、git  push  <名字> <分支名>
