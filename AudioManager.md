@@ -5,6 +5,7 @@ AudioManager am = (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
 
 ## 2、相关方法详解
 
+```
 ### 2.1
 方法：adjustVolume(int direction, int flags) 
 作用：控制手机音量,调大或者调小一个单位,根据第一个参数进行判断 。
@@ -121,17 +122,14 @@ RINGER_MODE_VIBRATE（震动）
 方法：egisterMediaButtonEventReceiver(ComponentName eventReceiver) 
 作用：注册一个组件MEDIA_BUTTON意图的唯一接收机。
 
-### 2.26.
-方法：requestAudioFocus(AudioManager.OnAudioFocusChangeListener l,int streamType,int durationHint) 
+### 2.26.  requestAudioFocus(AudioManager.OnAudioFocusChangeListener l,int streamType,int durationHint) 
 作用：请求音频的焦点。
 
-### 2.27
-方法：setBluetoothScoOn(boolean on)
+### 2.27 setBluetoothScoOn(boolean on)
 作用：要求使用蓝牙SCO耳机进行通讯。
 
-### 2.28
-方法：startBluetoothSco/stopBluetoothSco()
+### 2.28  startBluetoothSco/stopBluetoothSco()
 作用：启动/停止蓝牙SCO音频连接。
 
-### 2.29
-方法：unloadSoundEffects()
+### 2.29  unloadSoundEffects()
+```
