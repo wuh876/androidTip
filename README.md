@@ -1,5 +1,10 @@
 # android知识点
 
+## 调试手机webview
+```
+在Chrome浏览器输入 Chrome://inspect
+```
+
 # 根据图片的名字获取对应的资源ID
 
 一、   getResources().getIdentifier(String name,String defType,String defPackage) 
