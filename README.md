@@ -1,6 +1,12 @@
 # android知识点
 
 ```
+打包
+as终端输入  gradlew assembleDebug
+或 gradlew assembleRelease
+```
+
+```
 def getVersionCode() {
     def versionFile = file('version.properties')
     if (versionFile.canRead()) {
