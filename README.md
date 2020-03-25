@@ -1,5 +1,26 @@
 # android知识点
 
+```
+def getVersionCode() {
+    def versionFile = file('version.properties')
+    if (versionFile.canRead()) {
+        Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionCode = versionProps['VERSION_CODE'].toInteger()
+        def runTasks = gradle.startParameter.taskNames
+        println("runTasks------$runTasks")
+        //仅在assembleAppDebug任务是增加版本号
+        if ('assembleAppDebug' in runTasks || ':app:assembleLightningDebug' in runTasks) {
+            versionProps['VERSION_CODE'] = (++versionCode).toString()
+            versionProps.store(versionFile.newWriter(), null)
+        }
+        return versionCode
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+```
+
 ## 调试手机webview
 ```
 在Chrome浏览器输入 Chrome://inspect
