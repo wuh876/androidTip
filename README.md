@@ -32,6 +32,10 @@ def getVersionCode() {
 在Chrome浏览器输入 Chrome://inspect
 ```
 
+```
+http://restapi.amap.com/v3/place/text?key=ab07b7519a716f31da52d251a1159595&keywords=%E5%B0%9A%E5%85%B0%E6%9D%91&offset=10&page=1&output=JSON&extensions=all
+```
+
 # 根据图片的名字获取对应的资源ID
 
 一、   getResources().getIdentifier(String name,String defType,String defPackage) 
